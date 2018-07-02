@@ -10,4 +10,5 @@
      script.onerror = function ( event ) {
           console.error ( "Ошибка загрузки скрипта" + script.src )
      }
+
 })()

@@ -1,6 +1,7 @@
 function testUserText ( userText ) {
-      return userText
+      return userText.replace(/<\/?[^>]+(>|$)/g, "")
 }
+
 function insertUserText ( userText ) {
       var x = document.createElement ( 'div' )
       x.innerHTML = testUserText ( userText )
